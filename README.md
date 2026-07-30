@@ -1,21 +1,23 @@
-# Magi Wigs — Custom Order Website
+# Magi Wigs — אתר הזמנה אישי
 
-אתר סטטי בעברית עבור Magi Wigs, כולל עיצוב יוקרתי, תמונות מקומיות, לוגו וטופס הזמנה ששולח את הפרטים לוואטסאפ.
+אתר סטטי בעברית לפאות בהתאמה אישית, כולל:
 
-## העלאה ל-GitHub ללא התקנת Git
+- עיצוב יוקרתי בשחור, שמנת ורוז־גולד
+- לוגו Magi Wigs
+- תמונות נשים בלבוש צנוע עם מראות שיער שונים
+- טופס מלא לקבלת הצעת מחיר
+- שליחת הטופס למייל באמצעות FormSubmit
+- כפתור WhatsApp קבוע
+- התאמה מלאה לטלפון ולמחשב
 
-1. פתחו Repository חדש וריק ב-GitHub.
-2. לחצו **Add file → Upload files**.
-3. גררו את כל הקבצים והתיקיות מתוך הפרויקט, כולל תיקיית `assets`.
-4. לחצו **Commit changes**.
+## העלאה ל-GitHub ללא Git
+
+1. חלצו את קובץ ה-ZIP.
+2. פתחו את תיקיית `magi-wigs-custom-order`.
+3. בריפו ב-GitHub לחצו `Add file` ואז `Upload files`.
+4. גררו את `index.html`, `styles.css`, `script.js`, `README.md` ואת תיקיית `assets`.
+5. לחצו `Commit changes`.
 
 ## פרסום ב-Vercel
 
-1. היכנסו ל-Vercel ולחצו **Add New → Project**.
-2. בחרו את ה-Repository.
-3. אין צורך בפקודת Build או בהגדרות מיוחדות.
-4. לחצו **Deploy**.
-
-## שינוי מספר הוואטסאפ
-
-המספר נמצא בסוף הקובץ `script.js` בשורה המכילה `wa.me`.
+בחרו `Add New` → `Project`, בחרו את הריפו ולחצו `Deploy`. אין צורך בהגדרות Build מיוחדות.
