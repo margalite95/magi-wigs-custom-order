@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#11100f">
+  <meta name="description" content="Magi Wigs — פאות איכותיות משיער אירופי בהתאמה אישית, ללא פערי תיווך, החל מ־1,000 אירו ובהזמנה ללא התחייבות.">
+  <title>Magi Wigs | פאה בהתאמה אישית</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/magiwigs-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo-wrap" href="#top" aria-label="Magi Wigs">
+      <img src="assets/magiwigs-logo.png" alt="לוגו Magi Wigs">
+    </a>
+    <a class="header-cta" href="#order">להזמנה אישית</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-image">
+        <img src="assets/look-soft.jpg" alt="אישה בלבוש צנוע עם שיער חום גלי במראה טבעי">
+        <div class="image-badge">שיער אירופי איכותי</div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="kicker">MAGI WIGS · CUSTOM MADE</p>
+        <h1>פאה בהתאמה אישית<br><span>במחיר שמפתיע.</span></h1>
+        <p class="lead">פאה איכותית משיער אירופי, בהזמנה ישירה וללא פערי תיווך — החל מ־<strong>1,000 אירו</strong>.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#order">לבחירת הפאה שלך</a>
+          <a class="text-link" href="#looks">לצפייה בסגנונות</a>
+        </div>
+        <p class="no-risk">שליחת ההזמנה אינה מחייבת רכישה.</p>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="יתרונות">
+      <article><span>01</span><div><strong>שיער אירופי</strong><small>מראה טבעי ואיכות גבוהה</small></div></article>
+      <article><span>02</span><div><strong>ללא פערי תיווך</strong><small>מחיר ישיר ומפתיע</small></div></article>
+      <article><span>03</span><div><strong>התאמה אישית</strong><small>אורך, גוון וסגנון לבחירתך</small></div></article>
+    </section>
+
+    <section id="looks" class="looks-section">
+      <div class="section-heading">
+        <p>מראות להשראה</p>
+        <h2>בחרי את הסגנון שלך</h2>
+      </div>
+
+      <div class="look-grid">
+        <button class="look-card" type="button" data-style="גלי טבעי">
+          <img src="assets/look-waves.jpg" alt="אישה בלבוש צנוע עם שיער חום גלי">
+          <span>גלי טבעי</span>
+        </button>
+        <button class="look-card" type="button" data-style="גלים מלאים">
+          <img src="assets/look-back.jpg" alt="אישה בלבוש צנוע עם שיער ארוך ומלא תנועה">
+          <span>גלים מלאים</span>
+        </button>
+        <button class="look-card" type="button" data-style="חלק טבעי">
+          <img src="assets/look-straight.jpg" alt="אישה בלבוש צנוע עם שיער חלק בגוון חום">
+          <span>חלק טבעי</span>
+        </button>
+      </div>
+      <p class="photo-note">התמונות להמחשת סגנון בלבד. כל פאה מותאמת לפי הבחירות האישיות שלך.</p>
+    </section>
+
+    <section id="order" class="order-section">
+      <aside class="order-copy">
+        <p class="kicker">הזמנה אישית</p>
+        <h2>איזו פאה מתאימה לך?</h2>
+        <p>ממלאים בקצרה, שולחים בוואטסאפ ומקבלים המשך ליווי אישי.</p>
+        <div class="price-card">
+          <small>מחיר התחלתי</small>
+          <strong>החל מ־€1,000</strong>
+          <span>המחיר הסופי נקבע לפי האורך והמפרט.</span>
+        </div>
+      </aside>
+
+      <form id="wigForm" novalidate>
+        <div class="form-grid">
+          <label>שם מלא
+            <input name="fullName" autocomplete="name" required placeholder="השם שלך">
+          </label>
+          <label>טלפון
+            <input name="phone" type="tel" autocomplete="tel" required placeholder="05X-XXXXXXX">
+          </label>
+          <label>אורך
+            <select name="length" required>
+              <option value="">בחרי אורך</option>
+              <option>8–10 אינץ׳</option>
+              <option>12–14 אינץ׳</option>
+              <option>16–18 אינץ׳</option>
+              <option>20 אינץ׳ ומעלה</option>
+            </select>
+          </label>
+          <label>סגנון
+            <select id="styleField" name="style" required>
+              <option value="">בחרי סגנון</option>
+              <option>חלק טבעי</option>
+              <option>גלי טבעי</option>
+              <option>גלים מלאים</option>
+              <option>מתולתל</option>
+              <option>בוב</option>
+            </select>
+          </label>
+          <label>צבע בסיס
+            <select name="baseColor" required>
+              <option value="">בחרי צבע</option>
+              <option>שחור טבעי</option>
+              <option>חום כהה</option>
+              <option>חום טבעי</option>
+              <option>חום בהיר</option>
+              <option>בלונד כהה</option>
+            </select>
+          </label>
+          <label>גוונים
+            <select name="highlights">
+              <option>ללא גוונים</option>
+              <option>גוונים עדינים</option>
+              <option>גוונים אפרפרים</option>
+              <option>גוונים חמים</option>
+              <option>בליאז׳</option>
+            </select>
+          </label>
+          <label>שביל
+            <select name="parting">
+              <option>ללא העדפה</option>
+              <option>שביל אמצע</option>
+              <option>שביל צד ימין</option>
+              <option>שביל צד שמאל</option>
+            </select>
+          </label>
+          <label>תקציב משוער
+            <select name="budget">
+              <option>עד €1,300</option>
+              <option>€1,300–€1,600</option>
+              <option>€1,600–€2,000</option>
+              <option>מעל €2,000</option>
+            </select>
+          </label>
+          <label class="full-width">הערות נוספות
+            <textarea name="notes" rows="3" placeholder="צפיפות, סקין, תנועה, תמונת השראה או כל פרט חשוב"></textarea>
+          </label>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" required>
+          <span>ברור לי ששליחת הפרטים אינה מחייבת רכישה.</span>
+        </label>
+        <button class="submit-button" type="submit">שליחת ההזמנה בוואטסאפ</button>
+        <p class="privacy">הפרטים נשלחים ישירות ל־Magi Wigs ונועדו לטיפול בפנייה בלבד.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/magiwigs-logo.png" alt="Magi Wigs">
+    <p>פאות משיער אירופי בהתאמה אישית</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
