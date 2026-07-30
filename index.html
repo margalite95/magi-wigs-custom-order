@@ -2,166 +2,310 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#11100f">
-  <meta name="description" content="Magi Wigs — פאות איכותיות משיער אירופי בהתאמה אישית, ללא פערי תיווך, החל מ־1,000 אירו ובהזמנה ללא התחייבות.">
-  <title>Magi Wigs | פאה בהתאמה אישית</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151210">
+  <meta name="description" content="MagiWigs — פאות איכותיות משיער אירופי בהתאמה אישית, ללא פערי תיווך, החל מ־1,000 אירו ובהזמנה ללא התחייבות.">
+  <title>MagiWigs | פאה בהתאמה אישית</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/magiwigs-logo.png">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --black:#151210;
+      --black-2:#211b18;
+      --cream:#fbf7f3;
+      --cream-2:#f1e7df;
+      --rose:#bd806d;
+      --rose-light:#e2b49a;
+      --ink:#2a2421;
+      --muted:#776c66;
+      --line:#e7d8cf;
+      --white:#fff;
+      --shadow:0 20px 55px rgba(42,31,25,.13);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Heebo",Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(1160px,calc(100% - 36px));margin:auto}
+
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(21,18,16,.97);border-bottom:1px solid rgba(226,180,154,.2);backdrop-filter:blur(12px)}
+    .topbar-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand img{width:148px;height:66px;object-fit:contain}
+    .top-cta{border:1px solid rgba(226,180,154,.55);color:#fff7f3;padding:10px 20px;border-radius:999px;font-size:14px;font-weight:700;transition:.2s}
+    .top-cta:hover{background:var(--rose);border-color:var(--rose)}
+
+    .hero{background:linear-gradient(120deg,#fffaf7 0%,#efe0d7 100%)}
+    .hero-grid{min-height:650px;display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+    .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:70px 60px 70px 0}
+    .eyebrow{margin:0 0 12px;color:var(--rose);font-size:12px;font-weight:800;letter-spacing:1.8px}
+    h1,h2{font-family:"Frank Ruhl Libre",serif;line-height:1.08}
+    h1{font-size:clamp(46px,6vw,76px);margin:0;font-weight:600}
+    h1 span{color:var(--rose)}
+    .hero-lead{font-size:20px;color:#5d514b;max-width:580px;margin:24px 0 0}
+    .hero-lead strong{color:var(--ink)}
+    .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:30px}
+    .btn-primary{display:inline-flex;justify-content:center;align-items:center;background:var(--black);color:white;padding:15px 27px;border-radius:8px;font-weight:800;box-shadow:0 12px 25px rgba(21,18,16,.18);transition:.2s;border:0;cursor:pointer}
+    .btn-primary:hover{background:var(--rose);transform:translateY(-2px)}
+    .text-link{font-weight:700;border-bottom:1px solid var(--rose);padding-bottom:2px}
+    .no-commit{margin:17px 0 0;color:var(--muted);font-size:13px}
+    .hero-photo{position:relative;min-height:650px;overflow:hidden}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+    .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(239,224,215,.78),transparent 28%)}
+    .hero-tag{position:absolute;z-index:2;right:24px;bottom:24px;background:rgba(21,18,16,.9);color:#fff3ed;border:1px solid rgba(226,180,154,.34);padding:11px 16px;border-radius:999px;font-size:13px}
+
+    .benefits{background:var(--black);color:#fff}
+    .benefits-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+    .benefit{padding:28px 34px;display:flex;gap:15px;align-items:flex-start;border-left:1px solid rgba(226,180,154,.18)}
+    .benefit:last-child{border-left:0}
+    .benefit-number{color:var(--rose-light);font-family:"Frank Ruhl Libre",serif;font-size:27px;line-height:1}
+    .benefit strong{display:block;color:#fff4ef;font-size:17px}
+    .benefit small{display:block;color:#bfb2ab;font-size:13px;margin-top:3px}
+
+    .section{padding:84px 0}
+    .section-head{text-align:center;margin-bottom:34px}
+    .section-head .eyebrow{margin-bottom:6px}
+    .section-head h2{font-size:clamp(36px,5vw,53px);margin:0;font-weight:600}
+    .section-head p{color:var(--muted);max-width:660px;margin:12px auto 0}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .style-card{position:relative;overflow:hidden;border-radius:18px;aspect-ratio:4/5;background:#ddd;border:0;padding:0;cursor:pointer;box-shadow:var(--shadow);transition:.25s}
+    .style-card img{width:100%;height:100%;object-fit:cover;transition:.45s;filter:saturate(.93) contrast(1.02)}
+    .style-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,12,10,.74),transparent 50%)}
+    .style-card span{position:absolute;z-index:2;right:20px;bottom:17px;color:white;text-align:right;font-family:"Frank Ruhl Libre",serif;font-size:28px;line-height:1.05}
+    .style-card small{display:block;font-family:"Heebo",sans-serif;font-size:10px;letter-spacing:1.4px;color:#efc2b0;margin-bottom:7px;font-weight:700}
+    .style-card:hover{transform:translateY(-6px);box-shadow:0 28px 65px rgba(42,31,25,.2)}
+    .style-card:hover img{transform:scale(1.045)}
+    .style-card.selected{outline:3px solid var(--rose);outline-offset:4px}
+    .gallery-note{text-align:center;color:var(--muted);font-size:12px;margin:20px 0 0}
+
+    .order{background:radial-gradient(circle at 0 0,rgba(226,180,154,.12),transparent 34%),linear-gradient(135deg,#120f0d,#211a17);color:white}
+    .order-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:start}
+    .order-intro{padding-top:12px}
+    .order-intro .eyebrow{color:var(--rose-light)}
+    .order-intro h2{font-size:clamp(38px,5vw,58px);margin:0 0 14px;color:#fff4ef;font-weight:600}
+    .order-intro>p{color:#c4b7b0;max-width:410px}
+    .price-box{margin-top:27px;padding:24px;background:rgba(255,255,255,.055);border:1px solid rgba(226,180,154,.22);border-right:4px solid var(--rose-light);max-width:410px}
+    .price-box small,.price-box span{display:block;color:#c7b9b2}
+    .price-box strong{display:block;font-family:"Frank Ruhl Libre",serif;font-size:36px;color:#edc0af;margin:4px 0}
+    .business-list{list-style:none;padding:0;margin:25px 0 0;display:grid;gap:10px;color:#d6cac4}
+    .business-list li{position:relative;padding-right:25px}
+    .business-list li:before{content:"✓";position:absolute;right:0;color:var(--rose-light);font-weight:800}
+
+    .form-card{background:rgba(27,22,19,.76);border:1px solid rgba(226,180,154,.24);border-radius:22px;padding:34px;box-shadow:0 30px 80px rgba(0,0,0,.3);backdrop-filter:blur(18px)}
+    .form-title{text-align:center;margin-bottom:24px}
+    .form-title h3{font-family:"Frank Ruhl Libre",serif;color:#fff4ef;font-size:35px;margin:0}
+    .form-title p{margin:5px 0 0;color:#a99d97;font-size:13px}
+    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+    .field{display:block;color:#f0e4de;font-size:13px;font-weight:600}
+    .field span{display:block;margin-bottom:6px}
+    .field input,.field select,.field textarea{width:100%;border:1px solid rgba(226,180,154,.22);background:rgba(10,8,7,.5);color:white;border-radius:10px;padding:13px 14px;outline:none;transition:.2s}
+    .field input::placeholder,.field textarea::placeholder{color:#7f746f}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rose-light);box-shadow:0 0 0 3px rgba(226,180,154,.08)}
+    .field select option{background:#191412;color:white}
+    .field textarea{resize:vertical;min-height:100px}
+    .full{grid-column:1/-1}
+    .consent{display:flex;gap:9px;align-items:flex-start;margin:18px 0;color:#b7aaa4;font-size:13px}
+    .consent input{margin-top:4px;accent-color:var(--rose-light)}
+    .submit{width:100%;background:linear-gradient(135deg,#e6bba7,#b87967);color:#291b15;border:0;padding:16px;border-radius:10px;font-weight:900;font-size:17px;cursor:pointer;transition:.2s}
+    .submit:hover{filter:brightness(1.05);transform:translateY(-2px)}
+    .submit:disabled{opacity:.7;cursor:wait;transform:none}
+    #form-message{text-align:center;min-height:20px;margin-top:10px;font-size:13px}
+    .privacy{text-align:center;color:#8f837e;font-size:11px;margin:2px 0 0}
+
+    footer{background:#090807;color:#cbbeb7;text-align:center;padding:30px 15px;border-top:1px solid rgba(226,180,154,.12)}
+    footer img{width:135px;height:70px;object-fit:contain;margin:0 auto 4px}
+    footer p{margin:0;font-size:12px}
+
+    .wa{position:fixed;left:20px;bottom:20px;z-index:40;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25d366;color:white;box-shadow:0 12px 26px rgba(37,211,102,.33);font-size:24px}
+
+    .modal{display:none;position:fixed;inset:0;z-index:100;align-items:center;justify-content:center;padding:20px;background:rgba(9,8,7,.94);backdrop-filter:blur(14px)}
+    .modal.open{display:flex}
+    .modal-card{width:min(480px,100%);text-align:center;background:#1b1613;border:1px solid var(--rose-light);border-radius:20px;padding:42px 25px;box-shadow:0 25px 80px rgba(0,0,0,.55)}
+    .modal-card .check{width:70px;height:70px;border:2px solid var(--rose-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 17px;color:var(--rose-light);font-size:34px}
+    .modal-card h3{font-family:"Frank Ruhl Libre",serif;font-size:34px;color:#f1c8b8;margin:0 0 8px}
+    .modal-card p{color:#c5b8b1;margin:0 0 22px}
+    .modal-close{border:1px solid var(--rose-light);background:var(--rose-light);color:#251913;padding:11px 22px;border-radius:9px;font-weight:800;cursor:pointer}
+
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero-copy{padding:55px 24px;text-align:center;align-items:center}
+      .hero-photo{min-height:520px}
+      .hero-photo:after{background:linear-gradient(0deg,rgba(239,224,215,.55),transparent 34%)}
+      .hero-actions{justify-content:center}
+      .order-grid{grid-template-columns:1fr}
+      .order-intro{text-align:center}
+      .order-intro>p,.price-box{margin-left:auto;margin-right:auto}
+      .business-list{max-width:410px;margin-left:auto;margin-right:auto;text-align:right}
+    }
+    @media(max-width:680px){
+      .topbar-inner{height:70px}
+      .brand img{width:112px;height:54px}
+      .top-cta{padding:8px 13px;font-size:12px}
+      .hero-photo{min-height:440px}
+      .hero-copy{padding:46px 18px}
+      h1{font-size:43px}
+      .hero-lead{font-size:17px}
+      .benefits-grid{grid-template-columns:1fr}
+      .benefit{border-left:0;border-bottom:1px solid rgba(226,180,154,.17);padding:21px 12px}
+      .benefit:last-child{border-bottom:0}
+      .section{padding:62px 0}
+      .gallery{grid-template-columns:1fr}
+      .style-card{aspect-ratio:5/6}
+      .form-card{padding:24px 16px}
+      .form-grid{grid-template-columns:1fr}
+      .full{grid-column:auto}
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo-wrap" href="#top" aria-label="Magi Wigs">
-      <img src="assets/magiwigs-logo.png" alt="לוגו Magi Wigs">
-    </a>
-    <a class="header-cta" href="#order">להזמנה אישית</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="MagiWigs"><img src="assets/logo.png" alt="MagiWigs"></a>
+      <a class="top-cta" href="#order">להזמנה אישית</a>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-image">
-        <img src="assets/hero-premium.jpg" alt="צילום תדמית יוקרתי של פאה אירופית חומה בגלים טבעיים">
-        <div class="image-badge">שיער אירופי איכותי</div>
-      </div>
-
-      <div class="hero-copy">
-        <p class="kicker">MAGI WIGS · CUSTOM MADE</p>
-        <h1>פאה בהתאמה אישית<br><span>במחיר שמפתיע.</span></h1>
-        <p class="lead">פאה איכותית משיער אירופי, בהזמנה ישירה וללא פערי תיווך — החל מ־<strong>1,000 אירו</strong>.</p>
-        <div class="hero-actions">
-          <a class="primary-button" href="#order">לבחירת הפאה שלך</a>
-          <a class="text-link" href="#looks">לצפייה בסגנונות</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">MAGIWIGS · CUSTOM MADE</p>
+          <h1>פאה בהתאמה אישית<br><span>במחיר מפתיע</span></h1>
+          <p class="hero-lead">פאה איכותית משיער אירופי, בהזמנה ישירה וללא פערי תיווך — החל מ־<strong>1,000 אירו</strong>.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#order">לקבלת הצעה אישית</a>
+            <a class="text-link" href="#styles">לצפייה בסגנונות</a>
+          </div>
+          <p class="no-commit">שליחת הפרטים אינה מחייבת רכישה.</p>
         </div>
-        <p class="no-risk">שליחת ההזמנה אינה מחייבת רכישה.</p>
+        <div class="hero-photo">
+          <img src="assets/hero.jpg" alt="פאה חומה ארוכה בגלים טבעיים">
+          <div class="hero-tag">שיער אירופי איכותי</div>
+        </div>
       </div>
     </section>
 
-    <section class="trust-strip" aria-label="יתרונות">
-      <article><span>01</span><div><strong>שיער אירופי</strong><small>מראה טבעי ואיכות גבוהה</small></div></article>
-      <article><span>02</span><div><strong>ללא פערי תיווך</strong><small>מחיר ישיר ומפתיע</small></div></article>
-      <article><span>03</span><div><strong>התאמה אישית</strong><small>אורך, גוון וסגנון לבחירתך</small></div></article>
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <article class="benefit"><span class="benefit-number">01</span><div><strong>שיער אירופי איכותי</strong><small>מראה טבעי, רך ומלא תנועה</small></div></article>
+        <article class="benefit"><span class="benefit-number">02</span><div><strong>ללא פערי תיווך</strong><small>מחירים ישירים ומשתלמים</small></div></article>
+        <article class="benefit"><span class="benefit-number">03</span><div><strong>הזמנה ללא התחייבות</strong><small>ממלאים פרטים ומקבלים ליווי אישי</small></div></article>
+      </div>
     </section>
 
-    <section id="looks" class="looks-section">
-      <div class="section-heading">
-        <p>מראות להשראה</p>
-        <h2>בחרי את הסגנון שלך</h2>
+    <section id="styles" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">סגנונות להשראה</p>
+          <h2>בחרי את המראה שלך</h2>
+          <p>לחצי על סגנון שמוצא חן בעינייך והוא יסומן אוטומטית בטופס.</p>
+        </div>
+        <div class="gallery">
+          <button type="button" class="style-card" data-style="גלי"><img src="assets/waves.jpg" alt="פאה חומה בגלים רכים"><span><small>STYLE 01</small>גלי טבעי</span></button>
+          <button type="button" class="style-card" data-style="חלק"><img src="assets/straight.jpg" alt="פאה חומה חלקה"><span><small>STYLE 02</small>חלק טבעי</span></button>
+          <button type="button" class="style-card" data-style="גלים מלאים"><img src="assets/soft.jpg" alt="פאה חומה עם גלים מלאים"><span><small>STYLE 03</small>גלים מלאים</span></button>
+        </div>
+        <p class="gallery-note">התמונות מיועדות להשראה. כל פאה מותאמת אישית לפי האורך, הצבע, המבנה והתקציב.</p>
       </div>
-
-      <div class="look-grid">
-        <button class="look-card" type="button" data-style="גלי טבעי">
-          <img src="assets/look-premium-waves.jpg" alt="אישה בלבוש צנוע עם שיער חום גלי">
-          <span><small>COLLECTION 01</small>גלי טבעי</span>
-        </button>
-        <button class="look-card" type="button" data-style="גלים מלאים">
-          <img src="assets/look-premium-curls.jpg" alt="אישה בלבוש צנוע עם שיער ארוך ומלא תנועה">
-          <span><small>COLLECTION 02</small>גלים מלאים</span>
-        </button>
-        <button class="look-card" type="button" data-style="חלק טבעי">
-          <img src="assets/look-premium-straight.jpg" alt="אישה בלבוש צנוע עם שיער חלק בגוון חום">
-          <span><small>COLLECTION 03</small>חלק טבעי</span>
-        </button>
-      </div>
-      <p class="photo-note">קולקציית השראה מקצועית. כל פאה מיוצרת בהתאמה אישית לפי האורך, הגוון, הצפיפות והמבנה שתבחרי.</p>
     </section>
 
-    <section id="order" class="order-section">
-      <aside class="order-copy">
-        <p class="kicker">הזמנה אישית</p>
-        <h2>איזו פאה מתאימה לך?</h2>
-        <p>ממלאים בקצרה, שולחים בוואטסאפ ומקבלים המשך ליווי אישי.</p>
-        <div class="price-card">
-          <small>מחיר התחלתי</small>
-          <strong>החל מ־€1,000</strong>
-          <span>המחיר הסופי נקבע לפי האורך והמפרט.</span>
-        </div>
-      </aside>
+    <section id="order" class="section order">
+      <div class="container order-grid">
+        <aside class="order-intro">
+          <p class="eyebrow">הזמנה אישית</p>
+          <h2>הפאה שלך,<br>לפי הבחירה שלך</h2>
+          <p>מלאי את הפרטים ונחזור אלייך עם הצעה אישית והמשך ליווי.</p>
+          <div class="price-box"><small>מחיר התחלתי</small><strong>החל מ־€1,000</strong><span>המחיר הסופי נקבע לפי האורך והמפרט.</span></div>
+          <ul class="business-list">
+            <li>שיער אירופי איכותי</li>
+            <li>מחיר ישיר ללא פערי תיווך</li>
+            <li>התאמה אישית מלאה</li>
+            <li>שליחת הזמנה ללא התחייבות</li>
+          </ul>
+        </aside>
 
-      <form id="wigForm" novalidate>
-        <div class="form-grid">
-          <label>שם מלא
-            <input name="fullName" autocomplete="name" required placeholder="השם שלך">
-          </label>
-          <label>טלפון
-            <input name="phone" type="tel" autocomplete="tel" required placeholder="05X-XXXXXXX">
-          </label>
-          <label>אורך
-            <select name="length" required>
-              <option value="">בחרי אורך</option>
-              <option>8–10 אינץ׳</option>
-              <option>12–14 אינץ׳</option>
-              <option>16–18 אינץ׳</option>
-              <option>20 אינץ׳ ומעלה</option>
-            </select>
-          </label>
-          <label>סגנון
-            <select id="styleField" name="style" required>
-              <option value="">בחרי סגנון</option>
-              <option>חלק טבעי</option>
-              <option>גלי טבעי</option>
-              <option>גלים מלאים</option>
-              <option>מתולתל</option>
-              <option>בוב</option>
-            </select>
-          </label>
-          <label>צבע בסיס
-            <select name="baseColor" required>
-              <option value="">בחרי צבע</option>
-              <option>שחור טבעי</option>
-              <option>חום כהה</option>
-              <option>חום טבעי</option>
-              <option>חום בהיר</option>
-              <option>בלונד כהה</option>
-            </select>
-          </label>
-          <label>גוונים
-            <select name="highlights">
-              <option>ללא גוונים</option>
-              <option>גוונים עדינים</option>
-              <option>גוונים אפרפרים</option>
-              <option>גוונים חמים</option>
-              <option>בליאז׳</option>
-            </select>
-          </label>
-          <label>שביל
-            <select name="parting">
-              <option>ללא העדפה</option>
-              <option>שביל אמצע</option>
-              <option>שביל צד ימין</option>
-              <option>שביל צד שמאל</option>
-            </select>
-          </label>
-          <label>תקציב משוער
-            <select name="budget">
-              <option>עד €1,300</option>
-              <option>€1,300–€1,600</option>
-              <option>€1,600–€2,000</option>
-              <option>מעל €2,000</option>
-            </select>
-          </label>
-          <label class="full-width">הערות נוספות
-            <textarea name="notes" rows="3" placeholder="צפיפות, סקין, תנועה, תמונת השראה או כל פרט חשוב"></textarea>
-          </label>
+        <div class="form-card">
+          <div class="form-title"><h3>קבלת הצעת מחיר</h3><p>אנא מלאי את הפרטים הבאים</p></div>
+          <form id="orderForm" action="https://formsubmit.co/ajax/Margalite95@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="ליד חדש - בקשה להצעת מחיר - MagiWigs">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-grid">
+              <label class="field"><span>שם ושם משפחה *</span><input name="name" autocomplete="name" required placeholder="לדוגמה: יעל כהן"></label>
+              <label class="field"><span>טלפון חזרה *</span><input name="phone" type="tel" autocomplete="tel" required placeholder="050-0000000"></label>
+              <label class="field"><span>כתובת אימייל</span><input name="email" type="email" autocomplete="email" placeholder="mail@example.com"></label>
+              <label class="field"><span>עיר</span><input name="city" autocomplete="address-level2" placeholder="עיר מגורים"></label>
+              <label class="field"><span>בחירת פאה</span><select name="wigType"><option>לייס</option><option>לייס מקופל</option><option>פאת סרט</option><option>פאת קוקו</option></select></label>
+              <label class="field"><span>גודל רשת</span><select name="size"><option>S</option><option selected>M</option><option>L</option></select></label>
+              <label class="field"><span>אורך הפאה</span><select name="length"><option>8–10 אינץ׳</option><option>12–14 אינץ׳</option><option>16–18 אינץ׳</option><option>20 אינץ׳ ומעלה</option></select></label>
+              <label class="field"><span>סגנון השיער</span><select id="hairStyle" name="hairStyle"><option>חלק</option><option>גלי</option><option>גלים מלאים</option><option>מתולתל</option></select></label>
+              <label class="field"><span>צבע הפאה</span><select name="color"><option>שחור טבעי</option><option>חום כהה</option><option selected>חום</option><option>חום בהיר</option><option>בלונדיני</option></select></label>
+              <label class="field"><span>גוונים</span><select name="highlights"><option>ללא גוונים</option><option>גוונים עדינים</option><option>גוונים אפרפרים</option><option>גוונים חמים</option><option>בליאז׳</option></select></label>
+              <label class="field"><span>סוג לייס</span><select name="lace"><option>רגיל</option><option>מקופל</option><option>לייס מאוורר</option><option>ללא</option></select></label>
+              <label class="field"><span>תקציב משוער</span><select name="budget"><option>עד €1,300</option><option>€1,300–€1,600</option><option>€1,600–€2,000</option><option>מעל €2,000</option></select></label>
+              <label class="field full"><span>הערות נוספות</span><textarea name="notes" placeholder="צפיפות, שביל, סקין, גוון מדויק או כל בקשה מיוחדת"></textarea></label>
+            </div>
+            <label class="consent"><input type="checkbox" required><span>ברור לי ששליחת הפרטים אינה מחייבת רכישה.</span></label>
+            <button class="submit" type="submit">שליחה לקבלת הצעת מחיר</button>
+            <div id="form-message" aria-live="polite"></div>
+            <p class="privacy">הפרטים נשמרים לצורך טיפול בפנייה בלבד.</p>
+          </form>
         </div>
-
-        <label class="consent">
-          <input type="checkbox" required>
-          <span>ברור לי ששליחת הפרטים אינה מחייבת רכישה.</span>
-        </label>
-        <button class="submit-button" type="submit">שליחת ההזמנה בוואטסאפ</button>
-        <p class="privacy">הפרטים נשלחים ישירות ל־Magi Wigs ונועדו לטיפול בפנייה בלבד.</p>
-      </form>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <img src="assets/magiwigs-logo.png" alt="Magi Wigs">
-    <p>פאות משיער אירופי בהתאמה אישית</p>
-  </footer>
+  <footer><img src="assets/logo.png" alt="MagiWigs"><p>פאות איכותיות משיער אירופי בהתאמה אישית</p></footer>
+  <a class="wa" href="https://wa.me/972586660460" target="_blank" aria-label="פתיחת WhatsApp">☎</a>
 
-  <script src="script.js"></script>
+  <div class="modal" id="thanksModal" aria-hidden="true">
+    <div class="modal-card"><div class="check">✓</div><h3>תודה רבה</h3><p>הפרטים נשלחו בהצלחה. נחזור אלייך בהקדם עם הצעה אישית.</p><button class="modal-close" type="button" id="closeModal">חזרה לאתר</button></div>
+  </div>
+
+  <script>
+    const styleCards = [...document.querySelectorAll('.style-card')];
+    const styleField = document.getElementById('hairStyle');
+    styleCards.forEach(card => card.addEventListener('click', () => {
+      styleCards.forEach(item => item.classList.remove('selected'));
+      card.classList.add('selected');
+      styleField.value = card.dataset.style;
+      document.getElementById('order').scrollIntoView({behavior:'smooth',block:'start'});
+    }));
+
+    const form = document.getElementById('orderForm');
+    const submitButton = form.querySelector('.submit');
+    const message = document.getElementById('form-message');
+    const modal = document.getElementById('thanksModal');
+
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const oldText = submitButton.textContent;
+      submitButton.disabled = true;
+      submitButton.textContent = 'שולח נתונים...';
+      message.textContent = '';
+      try {
+        const response = await fetch(form.action, {method:'POST', body:new FormData(form), headers:{Accept:'application/json'}});
+        if (!response.ok) throw new Error('submit failed');
+        form.reset();
+        styleCards.forEach(item => item.classList.remove('selected'));
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden','false');
+      } catch (error) {
+        message.style.color = '#ff9a9a';
+        message.textContent = 'אירעה שגיאה בשליחה. אפשר לנסות שוב או לפנות אלינו בוואטסאפ.';
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = oldText;
+      }
+    });
+
+    const closeModal = () => { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); };
+    document.getElementById('closeModal').addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  </script>
 </body>
 </html>
